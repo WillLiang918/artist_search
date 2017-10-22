@@ -1,0 +1,30 @@
+.artist-list-item-container {
+  margin: 30px 10px;
+  width: 30%;
+
+  .artist-list-item {
+    margin: 0 auto;
+    max-width: 250px;
+
+    .artist-image {
+      margin-bottom: .75rem;
+      width: 100%;
+    };
+
+    .artist-name {
+      color: #2f3133;
+      font-family: 'Helvetica';
+      font-size: 16px;
+    };
+
+    .artist-description{
+      color: #777;
+      font-size: 13px;
+    };
+  };
+
+  @media screen and (max-width: 768px) {
+    margin: 15px 5px;
+    width: 45%;
+  };
+};

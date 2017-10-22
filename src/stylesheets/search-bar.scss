@@ -1,0 +1,20 @@
+.search-bar-container {
+  margin: 0 auto;
+  max-width: 300px;
+
+  .search-bar-form {
+    display: flex;
+    font-size: 15px;
+    padding: 10px;
+
+    .search-input {
+      flex: 1;
+      padding-left: 10px;
+      text-overflow: ellipsis;
+    };
+
+    .search-icon {
+      cursor: pointer;
+    };
+  };
+}
