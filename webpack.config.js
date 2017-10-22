@@ -1,7 +1,6 @@
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
-var path = require('path');
-var webpack = require('webpack');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require('path');
 
 const extractSass = new ExtractTextPlugin({
   filename: '[name].[contenthash].css',
@@ -11,7 +10,7 @@ module.exports = {
   entry: ['babel-polyfill', './src/client/index.jsx'],
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'artist_search.js'
+    filename: 'artist_search.js',
   },
   module: {
     loaders: [
@@ -19,8 +18,8 @@ module.exports = {
         test: /\.jsx?$/,
         loader: 'babel-loader',
         query: {
-          presets: ['es2015', 'stage-0', 'react']
-        }
+          presets: ['es2015', 'stage-0', 'react'],
+        },
       },
       {
         test: /\.scss$/,
@@ -33,8 +32,8 @@ module.exports = {
           fallback: 'style-loader',
         }),
         exclude: [/node_modules/],
-      }
-    ]
+      },
+    ],
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -42,10 +41,10 @@ module.exports = {
       template: 'src/client/index.ejs',
       cache: false,
     }),
-    new ExtractTextPlugin("styles.css"),
+    new ExtractTextPlugin('styles.css'),
   ],
   stats: {
-    colors: true
+    colors: true,
   },
-  devtool: 'source-map'
+  devtool: 'source-map',
 };

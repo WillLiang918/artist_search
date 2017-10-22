@@ -5,17 +5,17 @@ import '../../stylesheets/search-results.scss';
 
 class SearchResults extends React.Component {
   renderNoResults() {
-    return(
+    return (
       <div>
         No Results found
       </div>
     );
-  };
+  }
 
   render() {
     const artistsFound = this.props.artists.length > 0;
 
-    return(
+    return (
       <div className='search-results-container'>
         {
           artistsFound
@@ -24,7 +24,7 @@ class SearchResults extends React.Component {
         }
       </div>
     );
-  };
-};
+  }
+}
 
 export default SearchResults;

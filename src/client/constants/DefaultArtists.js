@@ -34,7 +34,7 @@ const TAYLOR_SWIFT = {
   imageUrl: 'http://iscale.iheart.com/catalog/artist/33221?ops=fit(250,0)',
 };
 
-export const DEFAULT_ARTISTS = [
+const DEFAULT_ARTISTS = [
   THE_WEEKND,
   SELENA_GOMEZ,
   R_CITY,
@@ -42,3 +42,5 @@ export const DEFAULT_ARTISTS = [
   MAJOR_LAZER,
   TAYLOR_SWIFT,
 ];
+
+export default DEFAULT_ARTISTS;

@@ -5,7 +5,7 @@ import { DEFAULT_SEARCH_OPTIONS } from '../constants/SearchParams';
 export default class Api {
   constructor(host = 'http://us.api.iheart.com/api/v1') {
     this.host = host;
-  };
+  }
 
   search(keywords) {
     const path = 'catalog/searchAll';
@@ -18,8 +18,8 @@ export default class Api {
 
     return fetch(searchUrl, {
       headers: {
-        'Accept': 'application/json'
-      }
+        Accept: 'application/json',
+      },
     });
-  };
-};
+  }
+}

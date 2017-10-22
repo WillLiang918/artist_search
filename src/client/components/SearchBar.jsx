@@ -1,16 +1,10 @@
 import React from 'react';
 import FaSearch from 'react-icons/lib/fa/search';
-import param from 'jquery-param';
 import {
   FormControl,
   FormGroup,
-  InputGroup
+  InputGroup,
 } from 'react-bootstrap';
-
-import {
-  DEFAULT_SEARCH_OPTIONS,
-  SEARCH_URL_BASE
-} from '../constants/SearchParams';
 
 import '../../stylesheets/search-bar.scss';
 
@@ -22,8 +16,8 @@ class SearchBar extends React.Component {
 
     this.state = {
       keywords: '',
-    }
-  };
+    };
+  }
 
   updateKeywords = (e) => {
     this.setState({
@@ -40,7 +34,7 @@ class SearchBar extends React.Component {
   };
 
   render() {
-    return(
+    return (
       <div className='search-bar-container'>
         <form className='search-bar-form' onSubmit={this.handleSearch}>
           <FormGroup>
@@ -60,7 +54,7 @@ class SearchBar extends React.Component {
         </form>
       </div>
     );
-  };
-};
+  }
+}
 
 export default SearchBar;
