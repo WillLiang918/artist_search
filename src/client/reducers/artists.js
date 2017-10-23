@@ -1,5 +1,5 @@
-import DEFAULT_ARTISTS from '../constants/DefaultArtists';
 import { SEARCH_RECEIVED } from '../constants/ActionTypes';
+import DEFAULT_ARTISTS from '../constants/DefaultArtists';
 
 const initialState = DEFAULT_ARTISTS;
 

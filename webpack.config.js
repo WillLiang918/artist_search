@@ -20,6 +20,7 @@ module.exports = {
         query: {
           presets: ['es2015', 'stage-0', 'react'],
         },
+        exclude: [/node_modules/],
       },
       {
         test: /\.scss$/,

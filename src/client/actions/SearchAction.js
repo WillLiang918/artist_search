@@ -1,4 +1,5 @@
 import Api from '../utils/Api';
+import { SEARCH_RECEIVED } from '../constants/ActionTypes';
 
 const createArtistsArrayFromResults = (results) => {
   const firstSixArtists = results.artists.slice(0, 6);
@@ -14,7 +15,7 @@ const receiveSearchResults = (results) => {
   const artists = createArtistsArrayFromResults(results);
 
   return {
-    type: 'SEARCH_RECEIVED',
+    type: SEARCH_RECEIVED,
     artists,
   };
 };
